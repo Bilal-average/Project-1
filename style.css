@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', cursive;
+}
+.container {
+    display: flex;
+    width: 90vw;
+}
+.image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    height: 80vh;
+    border-radius: 3rem;
+    margin: 2rem;
+    flex: 0.5;
+    position: relative;
+    cursor: pointer;
+    transition: flex 0.5s ease-in;
+}
+.image h1 {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    font-size: 3rem;
+    color: white;
+    margin: 0;
+    opacity: 0;
+}
+.image.active {
+    flex: 5;
+    background-color: none;
+}
+.image.active h1 {
+    opacity: 1;
+}
+@media (max-width: 480px) {
+    .container{
+        width: 100vw;
+    }
+    .four, .five{
+        display: none;
+    }
+}
+.one {
+    background-image: url(images/Jone-Jones.jpg);
+
+}
+.two {
+    background-image: url(images/Khabib.jpg);
+    
+}
+.three {
+    background-image: url(images/GSP.jpg);
+   
+}
+.four {
+    background-image: url(images/Kamaru.jpg);
+    
+}
+.five {
+    background-image: url(images/Conner.jpg);
+}
